@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
-/*
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -100,7 +94,6 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #fff; 
-		/* Change the font color above^^^  */
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
@@ -108,10 +101,12 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
+	/* This is what I think handles the animations, need to debug it for Chrome mobile */
 	a {
 		-moz-transition: border-color 0.2s ease-in-out;
 		-webkit-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
+		/*  */
 		transition: border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
 		color: inherit;
@@ -226,7 +221,7 @@ input, select, textarea {
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 
-		background: #ececec url("images/space2.jpg") center;
+		background: #ececec url("images/space3.jpg") center;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -892,7 +887,7 @@ input, select, textarea {
 
 /* Mobile */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 736px), (prefers-reduced-motion: reduce) {
 
 		/* Basic */
 
@@ -1000,7 +995,7 @@ input, select, textarea {
 
 /* Mobile (Portrait) */
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px), (prefers-reduced-motion: reduce) {
 
 		/* BG */
 
