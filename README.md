@@ -1,6 +1,6 @@
 Removed overlay and minor adjustments to animations. Added full background image and more icons.
 
-# Original Readme:
+Original Readme:
 
 Aerial by HTML5 UP
 html5up.net | @ajlkn
