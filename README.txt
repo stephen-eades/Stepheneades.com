@@ -1,3 +1,7 @@
+Removed overlay and minor adjustments to animations. Added full background image and more icons.
+
+# Original Readme:
+
 Aerial by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
