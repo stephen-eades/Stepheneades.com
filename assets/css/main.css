@@ -101,12 +101,10 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
-	/* This is what I think handles the animations, need to debug it for Chrome mobile */
 	a {
 		-moz-transition: border-color 0.2s ease-in-out;
 		-webkit-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
-		/*  */
 		transition: border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
 		color: inherit;
@@ -220,8 +218,7 @@ input, select, textarea {
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
-
-		background: #ececec url("images/space3.jpg") center;
+		background: #ececec url("images/earth-bg.jpg") bottom;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -347,7 +344,8 @@ input, select, textarea {
 		-ms-animation: overlay 1.5s 1.5s forwards;
 		animation: overlay 1.5s 1.5s forwards;
 		background-attachment: fixed, fixed;
-		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+		/* background-image: url("images/overlay-pattern.png"), url("images/overlay.svg"); */
+		background-color: #00000038;
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -721,6 +719,10 @@ input, select, textarea {
 		width: 100%;
 	}
 
+	.copyright {
+		color: rgba(255, 255, 255, 0.151);
+	}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -881,13 +883,13 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 102% auto;
+			background-size: 110% auto;
 			width: 2250px;
 		} }
 
 /* Mobile */
 
-	@media screen and (max-width: 736px), (prefers-reduced-motion: reduce) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
@@ -991,11 +993,12 @@ input, select, textarea {
 
 			#header nav a:active {
 				font-size: 1em;
-			} }
+			} 
+	}
 
 /* Mobile (Portrait) */
 
-	@media screen and (max-width: 480px), (prefers-reduced-motion: reduce) {
+	@media screen and (max-width: 480px) {
 
 		/* BG */
 
@@ -1072,5 +1075,168 @@ input, select, textarea {
 	/* Header */
 
 		#header nav {
-			padding: 0 1em;
-		} }
+			padding: 0 3em;
+		} 
+	}
+
+		@media screen and (max-width: 360px) {
+
+			/* BG */
+	
+				@-moz-keyframes bg {
+					0% {
+						-moz-transform: translate3d(0,0,0);
+						-webkit-transform: translate3d(0,0,0);
+						-ms-transform: translate3d(0,0,0);
+						transform: translate3d(0,0,0);
+					}
+	
+					100% {
+						-moz-transform: translate3d(-412.5px,0,0);
+						-webkit-transform: translate3d(-412.5px,0,0);
+						-ms-transform: translate3d(-412.5px,0,0);
+						transform: translate3d(-412.5px,0,0);
+					}
+	
+		}
+	
+			@-webkit-keyframes bg {
+				0% {
+					-moz-transform: translate3d(0,0,0);
+					-webkit-transform: translate3d(0,0,0);
+					-ms-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
+	
+				100% {
+					-moz-transform: translate3d(-412.5px,0,0);
+					-webkit-transform: translate3d(-412.5px,0,0);
+					-ms-transform: translate3d(-412.5px,0,0);
+					transform: translate3d(-412.5px,0,0);
+				}
+				}
+	
+			@-ms-keyframes bg {
+				0% {
+					-moz-transform: translate3d(0,0,0);
+					-webkit-transform: translate3d(0,0,0);
+					-ms-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
+	
+				100% {
+					-moz-transform: translate3d(-412.5px,0,0);
+					-webkit-transform: translate3d(-412.5px,0,0);
+					-ms-transform: translate3d(-412.5px,0,0);
+					transform: translate3d(-412.5px,0,0);
+				}
+			}
+	
+			@keyframes bg {
+				0% {
+					-moz-transform: translate3d(0,0,0);
+					-webkit-transform: translate3d(0,0,0);
+					-ms-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
+	
+				100% {
+					-moz-transform: translate3d(-412.5px,0,0);
+					-webkit-transform: translate3d(-412.5px,0,0);
+					-ms-transform: translate3d(-412.5px,0,0);
+					transform: translate3d(-412.5px,0,0);
+				}
+			}
+	
+			#bg {
+				background-size: 230% auto;
+				width: 1237.5px;
+			}
+	
+		/* Header */
+	
+			#header nav {
+				padding: 0 1em;
+			} 
+		}
+
+		@media screen and (max-width: 280px) {
+
+			/* BG */
+	
+				@-moz-keyframes bg {
+					0% {
+						-moz-transform: translate3d(0,0,0);
+						-webkit-transform: translate3d(0,0,0);
+						-ms-transform: translate3d(0,0,0);
+						transform: translate3d(0,0,0);
+					}
+	
+					100% {
+						-moz-transform: translate3d(-412.5px,0,0);
+						-webkit-transform: translate3d(-412.5px,0,0);
+						-ms-transform: translate3d(-412.5px,0,0);
+						transform: translate3d(-412.5px,0,0);
+					}
+	
+		}
+	
+			@-webkit-keyframes bg {
+				0% {
+					-moz-transform: translate3d(0,0,0);
+					-webkit-transform: translate3d(0,0,0);
+					-ms-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
+	
+				100% {
+					-moz-transform: translate3d(-412.5px,0,0);
+					-webkit-transform: translate3d(-412.5px,0,0);
+					-ms-transform: translate3d(-412.5px,0,0);
+					transform: translate3d(-412.5px,0,0);
+				}
+				}
+	
+			@-ms-keyframes bg {
+				0% {
+					-moz-transform: translate3d(0,0,0);
+					-webkit-transform: translate3d(0,0,0);
+					-ms-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
+	
+				100% {
+					-moz-transform: translate3d(-412.5px,0,0);
+					-webkit-transform: translate3d(-412.5px,0,0);
+					-ms-transform: translate3d(-412.5px,0,0);
+					transform: translate3d(-412.5px,0,0);
+				}
+			}
+	
+			@keyframes bg {
+				0% {
+					-moz-transform: translate3d(0,0,0);
+					-webkit-transform: translate3d(0,0,0);
+					-ms-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
+	
+				100% {
+					-moz-transform: translate3d(-412.5px,0,0);
+					-webkit-transform: translate3d(-412.5px,0,0);
+					-ms-transform: translate3d(-412.5px,0,0);
+					transform: translate3d(-412.5px,0,0);
+				}
+			}
+	
+			#bg {
+				background-size: 230% auto;
+				width: 1237.5px;
+			}
+	
+		/* Header */
+	
+			#header nav {
+				padding: 0 0em;
+			} 
+		}
